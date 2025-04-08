@@ -37,7 +37,7 @@ jobs:
         run: rustup component add --toolchain 1.81.0-x86_64-unknown-linux-gnu clippy
       - name: Install Clippy (macOS)
         if: matrix.os == 'macos-latest' && matrix.rust == '1.81.0'
-        run: rustup component add --toolchain 1.81.0-x86_64-apple-darwin clippy
+        run: rustup component add --toolchain 1.81.0-aarch64-apple-darwin clippy
       - name: Clippy
         if: matrix.rust == '1.81.0'
         run: cargo clippy --verbose -- -D warnings

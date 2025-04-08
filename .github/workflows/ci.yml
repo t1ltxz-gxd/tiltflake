@@ -29,6 +29,9 @@ jobs:
         run: cargo build --verbose
       - name: Test
         run: cargo test --verbose
+      - name: Install Clippy
+        if: matrix.rust == '1.81.0'
+        run: rustup component add --toolchain 1.81.0-x86_64-pc-windows-msvc clippy
       - name: Clippy
         if: matrix.rust == '1.81.0'
         run: cargo clippy --verbose -- -D warnings

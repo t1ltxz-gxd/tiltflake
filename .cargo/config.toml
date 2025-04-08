@@ -1,0 +1,11 @@
+[profile.dev]
+opt-level = 1
+
+[profile.release]
+opt-level = 3
+
+[target.x86_64-unknown-linux-gnu]
+linker = "gcc"
+
+[lints.rust]
+unsafe_code = "forbid"

@@ -1,0 +1,25 @@
+[package]
+name = "tiltflake"
+description = "Tiltflake is a distributed database that uses the flake algorithm to generate unique IDs."
+version = '0.0.0'
+edition = '2021'
+authors = ["t1ltxz.gxd? <git@t1ltxz.ninja>"]
+license = 'MIT'
+rust-version = '1.74.0'
+keywords = ["flake", "flake-id", "flake-id-generator", "distributed-database", "unique-id-generator"]
+categories = ["algorithms", "data-structures", "database", "network-programming", "development-tools"]
+repository = 'github.com/t1ltxz-gxd/tiltflake'
+
+[dependencies]
+chrono = { version = "0.4.40", features = ["clock"] }
+thiserror = "2.0.12"
+serde = { version = "1.0.219", features = ["derive"], optional = true }
+
+[features]
+default = []
+serde = ["dep:serde"]
+
+[package.metadata.git-cliff.git]
+conventional_commits = true
+commit_parsers = []
+filter_commits = false

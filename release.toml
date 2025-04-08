@@ -1,0 +1,9 @@
+pre-release-commit-message = ":rocket: chore(release): version {{version}}"
+shared-version = true
+sign-commit = false
+tag-message = "{{version}}"
+tag-prefix = ""
+publish = true
+push = true
+tag = true
+pre-release-hook = ["git", "cliff", "-o", "CHANGELOG.md", "--tag", "{{version}}" ]

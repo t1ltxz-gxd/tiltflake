@@ -2,10 +2,10 @@
 name = "tiltflake"
 description = "Tiltflake is a distributed database that uses the flake algorithm to generate unique IDs."
 version = '0.0.0'
-edition = '2021'
+edition = '2024'
 authors = ["t1ltxz.gxd? <git@t1ltxz.ninja>"]
 license = 'MIT'
-rust-version = '1.74.0'
+rust-version = '1.81.0'
 keywords = ["flake", "flake-id", "flake-id-generator", "distributed-database", "unique-id-generator"]
 categories = ["algorithms", "data-structures", "database", "network-programming", "development-tools"]
 repository = 'github.com/t1ltxz-gxd/tiltflake'

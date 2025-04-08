@@ -2,7 +2,7 @@
 name = "tiltflake"
 description = "Tiltflake is a distributed database that uses the flake algorithm to generate unique IDs."
 version = '0.0.0'
-edition = '2024'
+edition = '2021'
 authors = ["t1ltxz.gxd? <git@t1ltxz.ninja>"]
 license = 'MIT'
 rust-version = '1.81.0'

@@ -2,7 +2,13 @@
 
 All notable changes to this project will be documented in this file.
 
-## [0.1.1](https://github.com/t1ltxz-gxd/tiltflake/compare/v0.1.0..0.1.1) - 2025-04-09
+## [0.1.2](https://github.com/t1ltxz-gxd/tiltflake/compare/v0.1.1..0.1.2) - 2025-04-09
+
+### <!-- 7 -->⚙️ Miscellaneous Tasks
+
+- Add documentation URL for the Tiltflake project. - ([e909601](https://github.com/t1ltxz-gxd/tiltflake/commit/e90960123275566e5f999bfb330b9b14f718b92f))
+
+## [0.1.1](https://github.com/t1ltxz-gxd/tiltflake/compare/v0.1.0..v0.1.1) - 2025-04-09
 
 ### <!-- 0 -->🚀 Features
 
@@ -19,6 +25,7 @@ All notable changes to this project will be documented in this file.
 ### <!-- 7 -->⚙️ Miscellaneous Tasks
 
 - Rename preview image. - ([d89e419](https://github.com/t1ltxz-gxd/tiltflake/commit/d89e419fb62df3eff66430dc1bba9a4c4192c864))
+- Version 0.1.1 - ([5594f31](https://github.com/t1ltxz-gxd/tiltflake/commit/5594f3129767ec7ad4a738488cd958f8a8aad92f))
 
 ## 0.1.0 - 2025-04-08
 

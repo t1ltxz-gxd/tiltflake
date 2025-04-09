@@ -36,21 +36,14 @@
 #![doc(
 	html_favicon_url = "https://raw.githubusercontent.com/t1ltxz-gxd/tiltflake/main/assets/images/favicon.png"
 )]
-
 /// Module for building and constructing various components.
 mod builder;
-
 /// Public module for handling epoch-related functionality.
 pub mod epoch;
-
 /// Module for error definitions and handling.
 mod error;
-
 /// Public module for managing flakes and their operations.
 pub mod flake;
-
 /// Module for generating and managing unique identifiers.
 mod id;
-
-pub use epoch::*;
-pub use flake::*;
+pub use {epoch::*, flake::*};

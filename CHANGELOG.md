@@ -2,7 +2,21 @@
 
 All notable changes to this project will be documented in this file.
 
-## [0.1.3](https://github.com/t1ltxz-gxd/tiltflake/compare/v0.1.2..0.1.3) - 2025-04-09
+## [0.2.0](https://github.com/t1ltxz-gxd/tiltflake/compare/v0.1.3..0.2.0) - 2025-04-09
+
+### <!-- 0 -->🚀 Features
+
+- Expose `epoch` and `flake` modules for unique identifier management. - ([c1224b6](https://github.com/t1ltxz-gxd/tiltflake/commit/c1224b6c9fd3f1b27d9dd8de8fd28f92e5369e17))
+
+### <!-- 2 -->🚜 Refactor
+
+- Simplify import statements for `EpochType` and `Tiltflake` across multiple files. - ([457f612](https://github.com/t1ltxz-gxd/tiltflake/commit/457f6120bfd2278177d48eb4f5851e977c110bb1))
+
+### <!-- 3 -->📚 Documentation
+
+- Update Rust import statements for clarity in snowflake ID generation examples. - ([d3e739c](https://github.com/t1ltxz-gxd/tiltflake/commit/d3e739c5161073f09eba8dd9768475e36bf49114))
+
+## [0.1.3](https://github.com/t1ltxz-gxd/tiltflake/compare/v0.1.2..v0.1.3) - 2025-04-09
 
 ### <!-- 0 -->🚀 Features
 
@@ -11,6 +25,7 @@ All notable changes to this project will be documented in this file.
 ### <!-- 7 -->⚙️ Miscellaneous Tasks
 
 - Configure package metadata for docs.rs with serde features. - ([48defd2](https://github.com/t1ltxz-gxd/tiltflake/commit/48defd2ec08a28b4025daf480e34c7262bfeb918))
+- Version 0.1.3 - ([d0c00cf](https://github.com/t1ltxz-gxd/tiltflake/commit/d0c00cf7251f78885e0ad90330ca528c471fd7fd))
 
 ## [0.1.2](https://github.com/t1ltxz-gxd/tiltflake/compare/v0.1.1..v0.1.2) - 2025-04-09
 

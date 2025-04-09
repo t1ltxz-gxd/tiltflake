@@ -28,7 +28,7 @@ tiltflake = {version = "*", features = ["serde"]}
 
 ### Generate a Snowflake ID with a UNIX epoch
 ```rust
-use tiltflake::flake::Tiltflake;
+use tiltflake::Tiltflake;
 use std::error::Error;
 
 fn main() -> Result<(), Box<dyn Error>> {
@@ -49,7 +49,7 @@ fn main() -> Result<(), Box<dyn Error>> {
 ### Generate a Snowflake ID with a custom epoch
 ```rust
 use chrono::{TimeZone, Utc};
-use tiltflake::{epoch::EpochType, flake::Tiltflake};
+use tiltflake::{EpochType, Tiltflake};
 
 fn main() -> Result<(), Box<dyn std::error::Error>> {
 	let epoch = EpochType::Custom(
@@ -74,7 +74,7 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
 
 ### Generate a Snowflake ID with a custom Discord epoch
 ```rust
-use tiltflake::{epoch::EpochType, flake::Tiltflake};
+use tiltflake::{EpochType, Tiltflake};
 use std::error::Error;
 
 fn main() -> Result<(), Box<dyn Error>> {

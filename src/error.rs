@@ -1,6 +1,6 @@
 use chrono::ParseError;
 
-#[derive(Debug, thiserror::Error)]
+#[derive(Debug, Eq, PartialEq, thiserror::Error)]
 pub enum TiltflakeError {
 	#[error("RFC3339 parse error: {0}")]
 	Rfc3339ParseError(#[from] ParseError),

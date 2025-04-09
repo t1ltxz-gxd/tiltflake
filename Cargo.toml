@@ -9,6 +9,7 @@ rust-version = '1.81.0'
 keywords = ["flake", "flake-id", "flake-id-generator", "distributed-database", "unique-id-generator"]
 categories = ["algorithms", "data-structures", "database", "network-programming", "development-tools"]
 repository = 'https://github.com/t1ltxz-gxd/tiltflake'
+documentation = "https://docs.rs/tiltflake"
 
 [dependencies]
 chrono = { version = "0.4.40", features = ["clock"] }

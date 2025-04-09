@@ -1,5 +1,4 @@
 //! This crate provides utilities for building, managing epochs, handling flakes, and generating unique identifiers.
-
 #![forbid(unsafe_code)]
 #![deny(
 	clippy::all,
@@ -30,6 +29,12 @@
 	clippy::cast_precision_loss,
 	clippy::similar_names,
 	clippy::struct_excessive_bools
+)]
+#![doc(
+	html_logo_url = "https://raw.githubusercontent.com/t1ltxz-gxd/tiltflake/main/assets/images/logo.png"
+)]
+#![doc(
+	html_favicon_url = "https://raw.githubusercontent.com/t1ltxz-gxd/tiltflake/main/assets/images/favicon.png"
 )]
 
 /// Module for building and constructing various components.

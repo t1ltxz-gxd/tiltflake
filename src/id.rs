@@ -3,6 +3,7 @@ use chrono::{DateTime, Utc};
 use std::fmt;
 use std::str::FromStr;
 
+#[cfg_attr(docsrs, doc(cfg(feature = "serde")))]
 #[cfg_attr(feature = "serde", derive(serde::Serialize, serde::Deserialize))]
 #[cfg_attr(feature = "serde", serde(transparent))]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, PartialOrd, Ord, Hash)]

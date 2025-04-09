@@ -1,5 +1,5 @@
 use std::error::Error;
-use tiltflake::flake::Tiltflake;
+use tiltflake::Tiltflake;
 
 fn main() -> Result<(), Box<dyn Error>> {
 	let generator = Tiltflake::builder().build(); // Default machine_id is 1 and epoch is Unix

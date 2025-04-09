@@ -1,7 +1,6 @@
 use chrono::{TimeZone, Utc};
 use std::collections::HashSet;
-use tiltflake::epoch::EpochType;
-use tiltflake::flake::Tiltflake;
+use tiltflake::{EpochType, Tiltflake};
 
 fn main() {
 	let epoch = EpochType::Custom(Utc.with_ymd_and_hms(2020, 1, 1, 0, 0, 0).unwrap());

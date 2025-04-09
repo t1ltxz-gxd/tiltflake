@@ -1,5 +1,5 @@
 use chrono::{TimeZone, Utc};
-use tiltflake::{epoch::EpochType, flake::Tiltflake};
+use tiltflake::{EpochType, Tiltflake};
 
 fn main() -> Result<(), Box<dyn std::error::Error>> {
 	let epoch = EpochType::Custom(Utc.with_ymd_and_hms(2020, 1, 1, 0, 0, 0).single().unwrap());

@@ -1,5 +1,5 @@
 use std::error::Error;
-use tiltflake::{epoch::EpochType, flake::Tiltflake};
+use tiltflake::{EpochType, Tiltflake};
 
 fn main() -> Result<(), Box<dyn Error>> {
 	let generator = Tiltflake::builder()

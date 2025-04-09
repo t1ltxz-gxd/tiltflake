@@ -1,6 +1,5 @@
 use chrono::TimeZone;
-use tiltflake::epoch::EpochType;
-use tiltflake::flake::Tiltflake;
+use tiltflake::{EpochType, Tiltflake};
 
 fn main() {
 	let id: u64 = 1359135689932804096;

@@ -1,6 +1,6 @@
 <div align="center">
 
-[![Preview](/assets/images/favico.png)](https://github.com/t1ltxz-gxd/tiltflake)
+[![Preview](/assets/images/hero.png)](https://github.com/t1ltxz-gxd/tiltflake)
 <p>A strict, deterministic, and time-traveling Snowflake ID generator for Rust — supports timewalk generation from SystemTime, DateTime<Utc>, epoch milliseconds, or RFC3339 strings.</p>
 
 ---

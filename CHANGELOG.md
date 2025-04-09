@@ -2,11 +2,22 @@
 
 All notable changes to this project will be documented in this file.
 
-## [0.1.2](https://github.com/t1ltxz-gxd/tiltflake/compare/v0.1.1..0.1.2) - 2025-04-09
+## [0.1.3](https://github.com/t1ltxz-gxd/tiltflake/compare/v0.1.2..0.1.3) - 2025-04-09
+
+### <!-- 0 -->🚀 Features
+
+- Add serde feature conditional documentation attribute. - ([be9e227](https://github.com/t1ltxz-gxd/tiltflake/commit/be9e227d8ef0474c96899f84bdc4bd4e3f80fb0a))
+
+### <!-- 7 -->⚙️ Miscellaneous Tasks
+
+- Configure package metadata for docs.rs with serde features. - ([48defd2](https://github.com/t1ltxz-gxd/tiltflake/commit/48defd2ec08a28b4025daf480e34c7262bfeb918))
+
+## [0.1.2](https://github.com/t1ltxz-gxd/tiltflake/compare/v0.1.1..v0.1.2) - 2025-04-09
 
 ### <!-- 7 -->⚙️ Miscellaneous Tasks
 
 - Add documentation URL for the Tiltflake project. - ([e909601](https://github.com/t1ltxz-gxd/tiltflake/commit/e90960123275566e5f999bfb330b9b14f718b92f))
+- Version 0.1.2 - ([a56093d](https://github.com/t1ltxz-gxd/tiltflake/commit/a56093d868f6012b42e96d8a35c30a7029d2fa41))
 
 ## [0.1.1](https://github.com/t1ltxz-gxd/tiltflake/compare/v0.1.0..v0.1.1) - 2025-04-09
 

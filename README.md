@@ -6,9 +6,9 @@
 ---
 [![GitHub License](https://img.shields.io/github/license/t1ltxz-gxd/tiltflake)](https://github.com/t1ltxz-gxd/tiltflake/blob/main/LICENSE "license")
 [![Tests](https://img.shields.io/github/actions/workflow/status/t1ltxz-gxd/tiltflake/ci.yml?style=flat-square&logo=github&label=Tests)](https://github.com/t1ltxz-gxd/tiltflake/tests)
-[![Forks](https://custom-icon-badges.demolab.com/github/forks/t1ltxz-gxd/tiltflake?logo=fork)](https://github.com.t1ltxz-gxd/tiltflake/network/members)
+[![Forks](https://custom-icon-badges.demolab.com/github/forks/t1ltxz-gxd/tiltflake?logo=fork)](https://github.com/t1ltxz-gxd/tiltflake/network/members)
 [![Contributors](https://custom-icon-badges.demolab.com/github/contributors/t1ltxz-gxd/tiltflake?logo=people)](https://github.com/t1ltxz-gxd/tiltflake/graphs/contributors)
-[![Stars](https://custom-icon-badges.demolab.com/github/stars/t1ltxz-gxd/tiltflake?logo=star)](https://github.com/t1ltxz-gxd/tiltflake/stargazers')
+[![Stars](https://custom-icon-badges.demolab.com/github/stars/t1ltxz-gxd/tiltflake?logo=star)](https://github.com/t1ltxz-gxd/tiltflake/stargazers)
 [![Open issues](https://custom-icon-badges.demolab.com/github/issues-raw/t1ltxz-gxd/tiltflake?logo=issue)](https://github.com/t1ltxz-gxd/tiltflake/issues)
 
 

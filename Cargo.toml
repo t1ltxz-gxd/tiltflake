@@ -1,7 +1,7 @@
 [package]
 name = "tiltflake"
 description = "Tiltflake is a distributed database that uses the flake algorithm to generate unique IDs."
-version = "0.2.0"
+version = "0.2.1"
 edition = '2021'
 authors = ["t1ltxz.gxd? <git@t1ltxz.ninja>"]
 license = 'MIT'

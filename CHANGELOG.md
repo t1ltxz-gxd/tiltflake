@@ -2,7 +2,14 @@
 
 All notable changes to this project will be documented in this file.
 
-## [0.2.0](https://github.com/t1ltxz-gxd/tiltflake/compare/v0.1.3..0.2.0) - 2025-04-09
+## [0.2.1](https://github.com/t1ltxz-gxd/tiltflake/compare/v0.2.0..0.2.1) - 2025-04-09
+
+### <!-- 2 -->🚜 Refactor
+
+- Simplify public module imports for `epoch` and `flake`. - ([ec4ac89](https://github.com/t1ltxz-gxd/tiltflake/commit/ec4ac89b774319e50ce28f6d6e9509fd54b7c56a))
+- Remove unnecessary attribute for `serde` feature. - ([bcb15da](https://github.com/t1ltxz-gxd/tiltflake/commit/bcb15dae416d4a7bb698e7225386f849edf7f7f8))
+
+## [0.2.0](https://github.com/t1ltxz-gxd/tiltflake/compare/v0.1.3..v0.2.0) - 2025-04-09
 
 ### <!-- 0 -->🚀 Features
 
@@ -15,6 +22,10 @@ All notable changes to this project will be documented in this file.
 ### <!-- 3 -->📚 Documentation
 
 - Update Rust import statements for clarity in snowflake ID generation examples. - ([d3e739c](https://github.com/t1ltxz-gxd/tiltflake/commit/d3e739c5161073f09eba8dd9768475e36bf49114))
+
+### <!-- 7 -->⚙️ Miscellaneous Tasks
+
+- Version 0.2.0 - ([c6762a0](https://github.com/t1ltxz-gxd/tiltflake/commit/c6762a0376d1f92852bd14ca08f2ba3d793cc869))
 
 ## [0.1.3](https://github.com/t1ltxz-gxd/tiltflake/compare/v0.1.2..v0.1.3) - 2025-04-09
 

@@ -24,3 +24,8 @@ serde = ["dep:serde"]
 conventional_commits = true
 commit_parsers = []
 filter_commits = false
+
+[package.metadata.docs.rs]
+features = ["serde"]
+all-features = false
+no-default-features = true

@@ -26,6 +26,7 @@ jobs:
       - name: Install cargo-audit
         run: cargo install cargo-audit
       - name: Install cargo-deny
+        if: matrix.rust == 'stable' && matrix.os == 'ubuntu-latest'
         run: cargo install cargo-deny
       - name: Build
         run: cargo build --verbose
@@ -47,5 +48,5 @@ jobs:
         if : matrix.rust == '1.81.0'
         run: cargo audit
       - name: Deny
-        if : matrix.rust == '1.81.0' && matrix.os == 'ubuntu-latest'
+        if : matrix.rust == 'stable' && matrix.os == 'ubuntu-latest'
         run: cargo deny check

@@ -1,10 +1,11 @@
 on:
   push:
-      branches:
+    branches:
       - main
   pull_request: {}
+
 jobs:
-  build:
+  build-and-test:
     strategy:
       matrix:
         os: [ubuntu-latest, macos-latest, windows-latest]
@@ -15,38 +16,60 @@ jobs:
           - nightly
     runs-on: ${{ matrix.os }}
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v2
-      - name: Install Rust
-        uses: actions-rs/toolchain@v1
+      - uses: actions/checkout@v2
+      - uses: actions-rs/toolchain@v1
         with:
           profile: minimal
           toolchain: ${{ matrix.rust }}
           override: true
-      - name: Install cargo-audit
-        run: cargo install cargo-audit
-      - name: Install cargo-deny
-        if: matrix.rust == 'stable' && matrix.os == 'ubuntu-latest'
-        run: cargo install cargo-deny
       - name: Build
         run: cargo build --verbose
       - name: Test
         run: cargo test --verbose
-      - name: Install Clippy (Windows)
-        if: matrix.os == 'windows-latest' && matrix.rust == '1.81.0'
-        run: rustup component add --toolchain 1.81.0-x86_64-pc-windows-msvc clippy
-      - name: Install Clippy (Ubuntu)
-        if: matrix.os == 'ubuntu-latest' && matrix.rust == '1.81.0'
-        run: rustup component add --toolchain 1.81.0-x86_64-unknown-linux-gnu clippy
-      - name: Install Clippy (macOS)
-        if: matrix.os == 'macos-latest' && matrix.rust == '1.81.0'
-        run: rustup component add --toolchain 1.81.0-aarch64-apple-darwin clippy
+
+  lint:
+    needs: build-and-test
+    strategy:
+      matrix:
+        os: [ubuntu-latest, macos-latest, windows-latest]
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions-rs/toolchain@v1
+        with:
+          profile: minimal
+          toolchain: 1.81.0
+          override: true
+          components: clippy
       - name: Clippy
-        if: matrix.rust == '1.81.0'
         run: cargo clippy --verbose -- -D warnings
-      - name: Audit
-        if : matrix.rust == '1.81.0'
+
+  security-audit:
+    needs: build-and-test
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions-rs/toolchain@v1
+        with:
+          profile: minimal
+          toolchain: stable
+          override: true
+      - name: Install cargo-audit
+        run: cargo install cargo-audit
+      - name: Run cargo-audit
         run: cargo audit
-      - name: Deny
-        if : matrix.rust == 'stable' && matrix.os == 'ubuntu-latest'
+
+  dependency-checks:
+    needs: build-and-test
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions-rs/toolchain@v1
+        with:
+          profile: minimal
+          toolchain: stable
+          override: true
+      - name: Install cargo-deny
+        run: cargo install cargo-deny
+      - name: Run cargo-deny
         run: cargo deny check

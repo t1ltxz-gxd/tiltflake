@@ -25,6 +25,8 @@ jobs:
           override: true
       - name: Install cargo-audit
         run: cargo install cargo-audit
+      - name: Install cargo-deny
+        run: cargo install cargo-deny
       - name: Build
         run: cargo build --verbose
       - name: Test
@@ -44,3 +46,6 @@ jobs:
       - name: Audit
         if : matrix.rust == '1.81.0'
         run: cargo audit
+      - name: Deny
+        if : matrix.rust == '1.81.0' && matrix.os == 'ubuntu-latest'
+        run: cargo deny check

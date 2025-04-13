@@ -4,18 +4,9 @@
 version = 2
 confidence-threshold = 0.8
 allow = [
-    "Unlicense",
     "Apache-2.0",
-    "BSD-2-Clause",
-    "BSD-3-Clause",
     "MIT",
-    "Unicode-DFS-2016",
     "MPL-2.0",
-    "ISC",
-    "CC0-1.0",
-    "BUSL-1.1",
-    "GPL-2.0",
-    "OpenSSL",
 ]
 
 [advisories]

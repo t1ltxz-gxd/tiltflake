@@ -12,7 +12,7 @@ repository = 'https://github.com/t1ltxz-gxd/tiltflake'
 documentation = "https://docs.rs/tiltflake"
 
 [dependencies]
-chrono = { version = "0.4.41", features = ["clock"] }
+chrono = { version = "0.4.42", features = ["clock"] }
 thiserror = "2.0.16"
 serde = { version = "1.0.219", features = ["derive"], optional = true }
 

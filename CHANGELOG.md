@@ -20,6 +20,7 @@ All notable changes to this project will be documented in this file.
 
 - Update conditions for installing cargo-deny and running cargo deny check. - ([769af08](https://github.com/t1ltxz-gxd/tiltflake/commit/769af08126a83385275d414de59d2befd7d5557f))
 - Upgrade GitHub actions for Rust setup and change checkout action version. - ([96543cd](https://github.com/t1ltxz-gxd/tiltflake/commit/96543cd743fbd794e6b23c1d6971fdb0ce5094ad))
+- Modify conditions for cargo-deny installation and update GitHub actions for Rust setup. - ([7d27f49](https://github.com/t1ltxz-gxd/tiltflake/commit/7d27f49d8a1deaccfd4e87156e449ad6e2908118))
 
 ## [0.2.1](https://github.com/t1ltxz-gxd/tiltflake/compare/v0.2.0..v0.2.1) - 2025-04-09
 

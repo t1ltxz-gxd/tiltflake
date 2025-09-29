@@ -2,12 +2,35 @@
 
 All notable changes to this project will be documented in this file.
 
-## [0.2.1](https://github.com/t1ltxz-gxd/tiltflake/compare/v0.2.0..0.2.1) - 2025-04-09
+## [0.3.0](https://github.com/t1ltxz-gxd/tiltflake/compare/v0.2.1..0.3.0) - 2025-09-29
+
+### <!-- 0 -->🚀 Features
+
+- Update allowed licenses by removing unnecessary entries. - ([2ed9790](https://github.com/t1ltxz-gxd/tiltflake/commit/2ed9790902a775fe05c081c8cc85fa227cfa773c))
+- Install `cargo-deny` and add audit checks in CI workflow. - ([9328e5a](https://github.com/t1ltxz-gxd/tiltflake/commit/9328e5a629843b0a70906456832e68c0951a62d1))
+- Enhance CI workflow with new lint, security audit, and dependency checks jobs. - ([333afdf](https://github.com/t1ltxz-gxd/tiltflake/commit/333afdff7ccb994f2cd5cd7bbc7442b1961479a9))
+- Add `from_u64` and `as_u64` methods to `TiltflakeId` for value conversion. - ([d93beac](https://github.com/t1ltxz-gxd/tiltflake/commit/d93beacdfd1ca15508bbf3302dbf2d9f1e8e1999))
+
+### <!-- 2 -->🚜 Refactor
+
+- Replace `MPL-2.0` with `Unicode-3.0` in allowed licenses. - ([9273165](https://github.com/t1ltxz-gxd/tiltflake/commit/9273165dc78a1b989bca1d32f52d7e895e9f74c0))
+- Upgrade `chrono` dependency from version 0.4.40 to 0.4.41. - ([14f2dab](https://github.com/t1ltxz-gxd/tiltflake/commit/14f2dabbfed0db01e16461ec13e72b95a679e9eb))
+
+### <!-- 7 -->⚙️ Miscellaneous Tasks
+
+- Update conditions for installing cargo-deny and running cargo deny check. - ([769af08](https://github.com/t1ltxz-gxd/tiltflake/commit/769af08126a83385275d414de59d2befd7d5557f))
+- Upgrade GitHub actions for Rust setup and change checkout action version. - ([96543cd](https://github.com/t1ltxz-gxd/tiltflake/commit/96543cd743fbd794e6b23c1d6971fdb0ce5094ad))
+
+## [0.2.1](https://github.com/t1ltxz-gxd/tiltflake/compare/v0.2.0..v0.2.1) - 2025-04-09
 
 ### <!-- 2 -->🚜 Refactor
 
 - Simplify public module imports for `epoch` and `flake`. - ([ec4ac89](https://github.com/t1ltxz-gxd/tiltflake/commit/ec4ac89b774319e50ce28f6d6e9509fd54b7c56a))
 - Remove unnecessary attribute for `serde` feature. - ([bcb15da](https://github.com/t1ltxz-gxd/tiltflake/commit/bcb15dae416d4a7bb698e7225386f849edf7f7f8))
+
+### <!-- 7 -->⚙️ Miscellaneous Tasks
+
+- Version 0.2.1 - ([d31a8ba](https://github.com/t1ltxz-gxd/tiltflake/commit/d31a8ba34d748d1496ff61b08b9f0b8567a21049))
 
 ## [0.2.0](https://github.com/t1ltxz-gxd/tiltflake/compare/v0.1.3..v0.2.0) - 2025-04-09
 

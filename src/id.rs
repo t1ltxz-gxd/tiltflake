@@ -60,6 +60,28 @@ impl TiltflakeId {
 	pub const fn into_inner(self) -> u64 {
 		self.0
 	}
+
+	/// Creates a new `TiltflakeId` from a raw `u64` value.
+	///
+	/// # Arguments
+	///
+	/// * `value` - The raw `u64` value to wrap as a `TiltflakeId`.
+	///
+	/// # Returns
+	///
+	/// A `TiltflakeId` containing the provided value.
+	pub const fn from_u64(value: u64) -> Self {
+		Self(value)
+	}
+
+	/// Returns the inner `u64` value of the `TiltflakeId`.
+	///
+	/// # Returns
+	///
+	/// The raw `u64` value contained in the `TiltflakeId`.
+	pub const fn as_u64(self) -> u64 {
+		self.0
+	}
 }
 
 impl fmt::Display for TiltflakeId {
